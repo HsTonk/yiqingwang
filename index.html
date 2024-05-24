@@ -21,7 +21,7 @@
 						</nav>
 					</header>
 
-				<!-- Menu -->
+				<!-- Menu 
 					<nav id="menu">
 						<div class="inner">
 							<h2>CONTACTS</h2>
@@ -31,30 +31,9 @@
 							</ul>
 							<a href="#" class="close">Close</a>
 						</div>
-					</nav>
+					</nav -->
 					
-<script>
-    document.querySelectorAll('nav a').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            const targetId = this.getAttribute('href');
-            
-            if (targetId.startsWith("#")) {
-                e.preventDefault(); // 阻止默认锚点点击行为
 
-                const targetElement = document.querySelector(targetId);
-
-                // 计算目标元素到页面顶部的距离，减去视口高度的一半
-                const offset = targetElement.getBoundingClientRect().top + window.pageYOffset - (window.innerHeight / 2) + (targetElement.clientHeight / 2);
-
-                // 使用 window.scrollTo 方法进行平滑滚动
-                window.scrollTo({
-                    top: offset,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-</script>
 
 				<!-- Banner -->
 					<section id="banner">
